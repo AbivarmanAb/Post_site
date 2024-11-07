@@ -1,0 +1,95 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+.head{
+background-color: aliceblue;
+color: black;
+padding: 1rem;
+width: 100%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.search{
+  position: absolute;
+  left: -999999px;
+}
+.form input[type="text"]{
+  font-family: 'open sans', sans-serif;
+  width: 100%;
+  min-height: 48px;
+  font-size: 1rem;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  outline: none;
+}
+.nav{ width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: black;
+}
+.nav ul{
+  color: #fff;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+
+  
+}
+.nav li{
+  padding: 1rem;
+}
+.nav li a{
+  color: azure;
+  text-decoration: none;
+}
+.nav li:hover,
+.nav li:focus,
+.nav li:hover a,
+.nav li:focus a{
+  background-color:#eee;
+  color:black;
+}
+.nav li:hover a,
+.nav li:focus a{
+  cursor: pointer;
+}
+.form{
+  width: 80%;
+  padding: 1rem 0 0 0.75rem;
+}
+.Home, .NewPost, .PostPage, .About,.Missing{
+  width: 100%;
+  flex-grow: 1;
+  padding: 1rem;
+  overflow-y: auto;
+  background-color: #fff;
+}
+@media only screen and (min-width:610px){
+  html{
+    font-size: 22px;
+  }
+  .nav{
+    
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+  }
+  .nav ul {
+    flex-wrap:inherit;
+    position: relative;
+    bottom: 1%;
+
+  }
+  .form{
+    align-items: center;
+    
+  }
+}
